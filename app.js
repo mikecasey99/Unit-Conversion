@@ -23,6 +23,18 @@ button.addEventListener("click", function(){
     }
 })
 
+userInput.addEventListener("keypress", (event)=>{
+    if(event.key === "Enter"){
+        number = userInput.value;
+        calculate(number);
+        if(userInput.value === ""){
+            length.textContent = "";
+            volume.textContent = "";
+            mass.textContent = "";
+        }
+    }
+})
+
 function calculate(number){
     localStorage.setItem(userInput.value, JSON.stringify(number))
     //BOX 1
