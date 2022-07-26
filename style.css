@@ -75,18 +75,20 @@
 
 @media screen and (max-width: 1500px){
     .row-one{
-        padding-bottom: 1em;
+        height: 40vh;
+        padding: 2em 2em;
     }
     #user-input{
-        width: 30vw;
-        height: 8vh;
+        width: 40vw;
+        height: 10vh;
     }
     #convert{
-        width: 20vw;
-        height: 5vh;
+        width: 40vw;
+        min-height: 6vh;
     }
     .conversions{
-        font-size: 75%;
+        font-size: 85%;
         width: 80vw;
+        height: 12vh;
     }
 }
