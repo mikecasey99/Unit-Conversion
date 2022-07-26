@@ -10,6 +10,7 @@ let number, feet, meters, gallons, liters, pounds, kilos;
 if(localStorage.getItem("userData") != false){
     let saved = JSON.parse(localStorage.getItem("userData"));
     localStorage.clear();
+    userInput.value = saved;
     calculate(saved);
 }
 
