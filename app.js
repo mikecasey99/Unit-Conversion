@@ -7,11 +7,12 @@ const button = document.getElementById("convert");
 
 let number, feet, meters, gallons, liters, pounds, kilos;
 
-//SAVED FROM BEFORE
-if(localStorage.getItem(userInput.value) != undefined && userInput.value != ""){
+if(localStorage.getItem("userData") != false){
+    let saved = JSON.parse(localStorage.getItem("userData"));
     localStorage.clear();
-    calculate(Number(userInput.value));
+    calculate(saved);
 }
+
 
 button.addEventListener("click", function(){
     number = userInput.value;
@@ -36,7 +37,7 @@ userInput.addEventListener("keypress", (event)=>{
 })
 
 function calculate(number){
-    localStorage.setItem(userInput.value, JSON.stringify(number))
+    localStorage.setItem("userData", JSON.stringify(number));
     //BOX 1
     feet = (number * 3.28084).toFixed(3);
     meters = (number / 3.28084).toFixed(3);
