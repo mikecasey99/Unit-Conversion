@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(220, 220, 220);
+}
+
+.row-one{
+    width: 100vw;
+    height: 30vh;
+    background: rgb(59, 121, 228);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.first-row{
+    margin-top: 2vh;
+}
+
+#user-input{
+    width: 7vw;
+    height: 8vh;
+    border: 1px solid white;
+    border-radius: .2em;
+    background: rgb(59, 121, 228);
+    color: white;
+    font-size:xxx-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+#convert{
+    width: 7vw;
+    height: 5vh;
+    border: none;
+    border-radius: .2em;
+    font-size: larger;
+    color: rgb(33, 33, 99);
+    background: white;
+}
+
+.row-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row-two h2, p{
+    margin-top: 1em;
+    color: rgb(33, 33, 99);
+    font-weight: 100;
+}
+
+.conversions{
+    background: white;
+    margin-top: 2em;
+    width: 40vw;
+    height: 15vh;
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 1500px){
+    .row-one{
+        padding-bottom: 1em;
+    }
+    #user-input{
+        width: 30vw;
+        height: 8vh;
+    }
+    #convert{
+        width: 20vw;
+        height: 5vh;
+    }
+    .conversions{
+        font-size: 75%;
+        width: 80vw;
+    }
+}
